@@ -3,7 +3,7 @@ import { FaAt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
-const Display = ({ character, info }) => {
+const Display = ({ info }) => {
   return (
     <div>
       <figure>
