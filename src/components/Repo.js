@@ -22,20 +22,22 @@ const Repo = ({ info }) => {
       console.log(stats);
       setStats(stats);
     });
-  }, [stats]);
+  }, [info.login]);
 
   return (
     <div>
       <p>REPOOOOS</p>
       <p>{info.repos_url}</p>
       <FlipMove>
-        {stats.map((stat) => (
-          <>
-            <p>{stat.label}</p>
-            <p>{stat.value}</p>
-            <p>{stat.color}</p>
-          </>
-        ))}
+        <div className="info-container">
+          {stats.map((stat) => (
+            <div key={stat.color} className="info-box">
+              <p className="label">Language: {stat.label}</p>
+              <p>Repositories {stat.value}</p>
+              <p>Stats {stat.color}</p>
+            </div>
+          ))}
+        </div>
       </FlipMove>
     </div>
   );

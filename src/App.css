@@ -100,3 +100,38 @@
 .intro-val {
   font-size: 12px;
 }
+.info-box {
+  height: auto;
+  width: 45vh;
+  margin: 10px 25px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+  border-radius: 5px;
+  color: #809ea8;
+}
+
+.label {
+  /* margin-top: -30px; */
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .info-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .info-box {
+    height: 20vh;
+    width: 20vw;
+    margin: 10px 25px;
+    background: white;
+    box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+    border-radius: 5px;
+    color: #809ea8;
+    flex: 0 1 20vw;
+  }
+}
