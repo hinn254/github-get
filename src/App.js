@@ -36,7 +36,6 @@ function App() {
     <div className="App">
       {character === "" ? (
         <>
-          {" "}
           <Header />
           <SearchBar value={receivedSearchItem} />{" "}
         </>
